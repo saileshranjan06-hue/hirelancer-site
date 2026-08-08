@@ -1,0 +1,32 @@
+# Hirelancer.agency
+
+User-agent: *
+Allow: /
+
+# AI search / live-answer crawlers — explicitly allowed so this site is
+# eligible to be cited in AI-generated answers (ChatGPT Search, Perplexity, etc.)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://hirelancer.agency/sitemap.xml
