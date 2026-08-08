@@ -145,6 +145,7 @@ header.site {
   font-weight: 800;
   font-size: 1rem;
 }
+.brand .wordmark { white-space: nowrap; }
 .brand small { color: var(--brand); }
 
 .nav-links {
