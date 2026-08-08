@@ -212,9 +212,17 @@ header.site {
 .hero-copy p.lead { font-size: 1.12rem; max-width: 520px; }
 .hero-actions { display: flex; gap: 14px; margin-top: 28px; flex-wrap: wrap; }
 
-.hero-stats { display: flex; gap: 32px; margin-top: 44px; flex-wrap: wrap; }
-.hero-stats div strong { display: block; font-size: 1.6rem; font-weight: 800; color: var(--brand); }
-.hero-stats div span { font-size: .85rem; color: var(--ink-soft); }
+.hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 44px; }
+.hero-stats div {
+  background: var(--brand);
+  border: 1.5px solid #fff;
+  border-radius: 12px;
+  padding: 20px 14px;
+  text-align: center;
+  box-shadow: 0 0 0 1px var(--brand);
+}
+.hero-stats div strong { display: block; font-size: 1.6rem; font-weight: 800; color: #fff; line-height: 1.1; }
+.hero-stats div span { display: block; font-size: .85rem; color: #fff; opacity: .92; margin-top: 4px; }
 
 .hero-visual {
   background: #fff;
@@ -258,8 +266,10 @@ header.site {
 @media (max-width: 480px) {
   .hero { padding: 44px 0 40px; }
   .hero-visual { padding: 18px; }
-  .hero-stats { gap: 20px 28px; margin-top: 32px; }
-  .hero-stats div strong { font-size: 1.35rem; }
+  .hero-stats { gap: 8px; margin-top: 28px; }
+  .hero-stats div { padding: 14px 6px; border-radius: 10px; }
+  .hero-stats div strong { font-size: 1.15rem; }
+  .hero-stats div span { font-size: .68rem; }
   .hero-actions { gap: 10px; }
   .hero-actions .btn { width: 100%; }
 }
