@@ -67,11 +67,11 @@
 <section>
   <div class="wrap two-col">
     <div class="form-card">
-      <form>
+      <form id="leadForm">
         <div class="field-row">
           <div class="field">
             <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <input type="text" id="name" name="name" placeholder="Your name" pattern="[A-Za-z\s.'\-]+" title="Letters only" required>
           </div>
           <div class="field">
             <label for="company">Company Name</label>
@@ -85,7 +85,7 @@
           </div>
           <div class="field">
             <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX">
+            <input type="tel" id="phone" name="phone" inputmode="numeric" placeholder="+91 XXXXX XXXXX" pattern="[0-9+\-\s]+" title="Numbers only" required>
           </div>
         </div>
         <div class="field-row">
@@ -105,13 +105,14 @@
           </div>
           <div class="field">
             <label for="budget">Monthly Budget (for the freelancer)</label>
-            <input type="text" id="budget" name="budget" placeholder="e.g. ₹40,000 – ₹60,000">
+            <input type="text" id="budget" name="budget" placeholder="e.g. 40,000 – 60,000">
           </div>
         </div>
         <div class="field">
           <label for="message">Tell us about your marketing goals</label>
           <textarea id="message" name="message" rows="5" placeholder="What are you hoping to achieve? Any specific platforms, channels, or experience you're looking for?"></textarea>
         </div>
+        <div id="leadFormError" style="display:none; color:var(--brand-dark); font-size:.85rem; margin-bottom:14px;"></div>
         <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Submit Request</button>
         <p style="font-size:.8rem; text-align:center; margin-top:14px;">By submitting, you agree to be contacted by Hirelancer.agency about your request.</p>
       </form>
