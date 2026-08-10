@@ -3,7 +3,7 @@
 User-agent: *
 Allow: /
 
-# AI search / live-answer crawlers — explicitly allowed so this site is
+# AI search / live-answer crawlers, explicitly allowed so this site is
 # eligible to be cited in AI-generated answers (ChatGPT Search, Perplexity, etc.)
 User-agent: OAI-SearchBot
 Allow: /

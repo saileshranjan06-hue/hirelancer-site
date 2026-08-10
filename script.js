@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
       this.value = this.value.replace(/[^0-9₹.,\-\s]/g, "");
     });
   }
-  // message field is intentionally unrestricted — free text and numbers allowed
+  // message field is intentionally unrestricted: free text and numbers allowed
 
   // ---------- Contact form: submit to Google Sheet, then redirect ----------
   // Paste your Google Apps Script Web App URL below (see setup instructions).
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       if (!LEAD_FORM_SCRIPT_URL) {
-        // Sheet not connected yet — proceed to thank-you page without saving.
+        // Sheet not connected yet, proceed to thank-you page without saving.
         window.location.href = "thankyou.html";
         return;
       }
