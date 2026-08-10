@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // ---------- Contact form: submit to Google Sheet, then redirect ----------
   // Paste your Google Apps Script Web App URL below (see setup instructions).
-  var LEAD_FORM_SCRIPT_URL = "";
+  var LEAD_FORM_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw-KcM2-EJugU0yeYUR3lsMgAlqxTuXss_thCPRiIAmculakflJsD6FYnDqzPrmtuP_xA/exec";
 
   var leadForm = document.getElementById("leadForm");
   if (leadForm) {
