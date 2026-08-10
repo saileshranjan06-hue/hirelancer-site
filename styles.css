@@ -541,6 +541,8 @@ footer.site p.tag { font-size: .9rem; max-width: 280px; color: #9a9aa1; }
 @media (max-width: 880px) { .two-col { grid-template-columns: 1fr; gap: 36px; } }
 @media (max-width: 480px) { .two-col { gap: 26px; } }
 
+.section-photo { width: 100%; height: auto; border-radius: 16px; box-shadow: var(--shadow); border: 1px solid var(--line); }
+
 /* ---------- Image placeholders (swap for real photos) ---------- */
 .img-placeholder {
   border: 2px dashed var(--brand);
